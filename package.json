@@ -4,14 +4,17 @@
   "description": "Learn GraphQL with React",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "json:server": "json-server --watch db.json"
   },
   "author": "Prasad Surase",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.6.8",
     "express": "^4.19.2",
     "express-graphql": "^0.12.0",
     "graphql": "^15.8.0",
+    "json-server": "^1.0.0-alpha.23",
     "lodash": "^4.17.21"
   }
 }
