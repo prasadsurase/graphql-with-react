@@ -78,7 +78,23 @@ fragment CompanyDetails on Company {
   description
 }
 
+# Mutation to add user
 
+mutation {
+  addUser(firstName: "Hello", age: 55) {
+    id
+    firstName
+    age
+  }
+}
+
+# Mutation to delete user
+
+mutation {
+  deleteUser(id: "02c2") {
+    id
+  }
+}
 
 
 
