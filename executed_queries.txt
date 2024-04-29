@@ -1,0 +1,76 @@
+# Retrieve an user using id
+
+{
+  user(id: "23") {
+    id
+    firstName
+    age
+  }
+}
+
+# Retrieve a company using id
+
+{
+  company(id: "1") {
+    id
+    name
+    description
+  }
+}
+
+# Retrieve an user using id with its association companies
+{
+  company(id: "1") {
+    id
+    name
+    description
+    users {
+      id
+      firstName
+    }
+  }
+}
+
+# Retrieve a company using id with its association users
+
+{
+  company(id: "2") {
+    id
+    name
+    users {
+      id
+      firstName
+    }
+  }
+}
+
+# Named queries
+
+{
+  apple: company(id: "1") {
+    name
+    users {
+      id
+      firstName
+    }
+  }
+  google: company(id: "2") {
+    name
+    users {
+      id
+      firstName
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
